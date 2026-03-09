@@ -12,6 +12,7 @@
 ;设置规则标志位
 ;有个小技巧，下列不同列表可能会有重复规则，可以将想要命中的规则尽量提前
 ruleset=🌏 diy规则,https://raw.githubusercontent.com/musiye14/clash_config/refs/heads/master/diy.list
+ruleset=🌏 steam,https://raw.githubusercontent.com/musiye14/clash_config/refs/heads/master/diy.list
 ruleset=🌏 pt规则,https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Ruleset/PrivateTracker.list
 ruleset=🚀 节点选择,https://raw.githubusercontent.com/chinnsenn/ClashCustomRule/master/proxies.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/chinnsenn/ClashCustomRule/master/direct.list
@@ -63,6 +64,7 @@ ruleset=🐟 漏网之鱼,[]FINAL
 
 ;设置分组标志位
 custom_proxy_group=🌏 diy规则`select`[]DIRECT
+custom_proxy_group=🌏 steam`select`[]DIRECT[]🚀 节点选择`[]♻️ 自动选择`[]🇸🇬 狮城节点-自动`[]🇭🇰 香港节点-自动`[]🇨🇳 台湾节点-自动`[]🇯🇵 日本节点-自动`[]🇺🇲 美国节点-自动
 custom_proxy_group=🌏 pt规则`select`[]DIRECT
 custom_proxy_group=🚀 节点选择`select`[]♻️ 自动选择`[]🔯 故障转移`[]🚀 手动切换`[]DIRECT`[]🇸🇬 狮城节点-自动`[]🇭🇰 香港节点-自动`[]🇨🇳 台湾节点-自动`[]🇯🇵 日本节点-自动`[]🇺🇲 美国节点-自动`[]🇰🇷 韩国节点-自动`[]🇬🇧 英国节点`[]🇩🇪 德国节点`[]🇨🇦 加拿大节点`[]🇧🇷 巴西节点`[]🇮🇳 印度节点`[]🇱🇺 卢森堡节点`[]🇳🇱 荷兰节点`[]🇮🇹 意大利节点`[]🇨🇭 瑞士节点`[]🇫🇷 法国节点`[]🇸🇦 沙特阿拉伯节点`[]🇮🇱 以色列节点`[]🇦🇪 迪拜节点`[]🇲🇽 墨西哥节点`[]🇨🇱 智利节点`[]🇦🇷 阿根廷节点`[]🇿🇦 南非节点`[]🇸🇪 瑞典节点`[]🇹🇷 土耳其节点
 custom_proxy_group=🚀 手动切换`select`.*
@@ -145,3 +147,4 @@ skip_failed_links=true
 exclude_remarks=(IPV6|重置|流量|用户|本站|漏洞|永久虚通路|车|邀|免翻|邀请|eevpn|域名|机场|刷新|禁止|备用登录|计划|面板|忘记|到期|套餐|官网|更多|关注|25倍率|http|增加|持续|渠道|购买|QQ|Ins|二手)
 
 ;luck
+
